@@ -9,25 +9,25 @@ app.use(express.static(path.join(__dirname, "../public")));
 
 //MEDIA COMPONENT
 const mediaProxy = createProxyMiddleware({
-  target: "http://localhost:8000",
+  target: "http://3.23.132.230:8000",
   changeOrigin: true,
 });
 
 //MAINBODY SIDEBAR COMPONENT
 const mainbodyProxy = createProxyMiddleware({
-  target: "http://localhost:1991",
+  target: "http://52.14.114.30:1992",
   changeOrigin: true,
 });
 
 //REVIEWS COMPONENT
 const reviewsProxy = createProxyMiddleware({
-  target: "http://localhost:4200",
+  target: "http://54.67.101.150:4200",
   changeOrigin: true,
 });
 
 //ANNOUCEMENTS COMPONENT
 const announcementsProxy = createProxyMiddleware({
-  target: "http://localhost:8080",
+  target: "http://3.17.138.9:8080",
   changeOrigin: true,
 });
 
