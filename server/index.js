@@ -39,6 +39,8 @@ app.use("/api/reviews/:id", reviewsProxy);
 
 app.use("/getGame", announcementsProxy);
 
+app.use("/updateLikes", announcementsProxy);
+
 app.use(parser.json());
 
 app.listen(port, () => {
