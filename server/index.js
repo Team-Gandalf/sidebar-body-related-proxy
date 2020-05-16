@@ -41,6 +41,8 @@ app.use("/getGame", announcementsProxy);
 
 app.use("/updateLikes", announcementsProxy);
 
+app.use("/randomGame", announcementsProxy);
+
 app.use(parser.json());
 
 app.listen(port, () => {
